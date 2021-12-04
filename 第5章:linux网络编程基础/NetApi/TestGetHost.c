@@ -8,7 +8,7 @@ int main(int argc,char *argv[]){
     
     struct hostent* ptemp1 = gethostbyname(name);
    // struct hostent* ptemp2 = gethostbyaddr(ip,sizeof(ip),AF_INET);
-    printf("%s",ptemp1->h_aliases[0]);
+    printf("%s",ptemp1->h_addr_list[0]);
    // printf("%s",ptemp2->h_aliases[0]);
     return 0;
 }
